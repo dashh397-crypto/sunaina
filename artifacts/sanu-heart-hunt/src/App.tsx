@@ -367,33 +367,45 @@ function GameScreen({ onWin }: { onWin: () => void }) {
 function BouquetArt() {
   const flowers = [
     {
-      className: 'flower flower--rose',
-      left: '22%',
-      top: '26%',
-      size: '1.02',
+      className: 'flower flower--rose flower--hero',
+      left: '23%',
+      top: '30%',
+      size: '1.12',
     },
     {
-      className: 'flower flower--coral',
-      left: '47%',
-      top: '12%',
-      size: '.85',
+      className: 'flower flower--rose flower--coral',
+      left: '48%',
+      top: '13%',
+      size: '.92',
     },
     {
-      className: 'flower flower--gold',
-      left: '70%',
-      top: '28%',
-      size: '.9',
+      className: 'flower flower--rose flower--deep',
+      left: '73%',
+      top: '29%',
+      size: '.98',
     },
     {
-      className: 'flower flower--small',
-      left: '36%',
-      top: '42%',
-      size: '.62',
+      className: 'flower flower--rose flower--blush',
+      left: '38%',
+      top: '43%',
+      size: '.7',
     },
     {
-      className: 'flower flower--small flower--peach',
-      left: '60%',
+      className: 'flower flower--rose flower--peach',
+      left: '62%',
       top: '48%',
+      size: '.66',
+    },
+    {
+      className: 'flower flower--rose flower--small flower--deep',
+      left: '16%',
+      top: '48%',
+      size: '.58',
+    },
+    {
+      className: 'flower flower--rose flower--small flower--coral',
+      left: '84%',
+      top: '47%',
       size: '.58',
     },
   ];
@@ -407,6 +419,10 @@ function BouquetArt() {
 
       <div className="bouquet-sparkles" aria-hidden="true">
         <i /><i /><i /><i /><i />
+      </div>
+
+      <div className="rose-petal-shower" aria-hidden="true">
+        <i /><i /><i /><i /><i /><i />
       </div>
 
       <div className="stems" aria-hidden="true">
@@ -428,7 +444,10 @@ function BouquetArt() {
           } as CSSProperties}
           aria-hidden="true"
         >
-          <i /><i /><i /><i /><b />
+          {Array.from({ length: 7 }, (_, index) => (
+            <i key={index} />
+          ))}
+          <b />
         </div>
       ))}
 
@@ -474,11 +493,11 @@ function BouquetScreen({
 
   const assemblyLines = [
     'Wait… something is blooming.',
-    'The stems are finding their shape.',
-    'A few soft blooms, just for you.',
-    'Tying it together with a little love.',
+    'The first rose is opening for you.',
+    'More roses, because one never felt like enough.',
+    'Tying the bouquet together with a little love.',
     'Almost ready for you, babygirl.',
-    'I wanted to give you something that felt as lovely as finding you.',
+    'I wanted to give you a bouquet that felt as lovely as finding you.',
   ];
 
   return (
@@ -499,7 +518,7 @@ function BouquetScreen({
           id="bouquet-title"
           className="display bouquet-title"
         >
-          For you,<br /><em>my babygirl</em>
+          Bouquet<br /><em>For you, my babygirl</em>
         </h1>
 
         <p className="bouquet-copy" aria-live="polite">
