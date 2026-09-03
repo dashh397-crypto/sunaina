@@ -44,10 +44,10 @@ type SecretCard = {
 const SECRET_CARDS: SecretCard[] = [
   { id: 'sanu-a', pair: 'sanu', label: 'Sanu', glyph: '♡' },
   { id: 'always-a', pair: 'always', label: 'always', glyph: '∞' },
-  { id: 'laughs-a', pair: 'muso', label: 'muso', glyph: '✦' },
+  { id: 'laughs-a', pair: 'muso', label: 'muso', glyph: '😘' },
   { id: 'home-a', pair: 'home', label: 'home', glyph: '⌂' },
   { id: 'home-b', pair: 'home', label: 'home', glyph: '⌂' },
-  { id: 'laughs-b', pair: 'muso', label: 'muso', glyph: '✦' },
+  { id: 'laughs-b', pair: 'muso', label: 'muso', glyph: '😘' },
   { id: 'always-b', pair: 'always', label: 'always', glyph: '∞' },
   { id: 'sanu-b', pair: 'sanu', label: 'Sanu', glyph: '♡' },
 ];
