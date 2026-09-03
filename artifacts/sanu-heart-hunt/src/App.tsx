@@ -62,7 +62,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
         <div className="intro-kicker name-chip">a tiny world for sunaina</div>
 
         <h1 id="intro-title" className="display intro-title">
-          Sanu<br /><em>Heart Hunt</em>
+          I ❤️<br /><em>You Baby</em>
         </h1>
 
         <p className="intro-subtitle">
