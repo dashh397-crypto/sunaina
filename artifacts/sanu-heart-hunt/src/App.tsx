@@ -59,7 +59,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
       <div className="intro-orbit intro-orbit-two" aria-hidden="true" />
 
       <section className="intro-copy" aria-labelledby="intro-title">
-        <div className="intro-kicker name-chip">a tiny world for sunaina</div>
+        <div className="intro-kicker name-chip">a tiny world for you muso</div>
 
         <h1 id="intro-title" className="display intro-title">
           I ❤️<br /><em>You Baby</em>
