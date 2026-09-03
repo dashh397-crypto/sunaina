@@ -682,7 +682,7 @@ function LetterScreen({
 
         <h1 className="display">
           A letter for<br />
-          <em>you my girl</em>
+          <em>you sanu</em>
         </h1>
 
         {!opened && (
